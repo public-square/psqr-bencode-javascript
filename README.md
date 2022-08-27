@@ -28,10 +28,10 @@ The details are contained in BEP 52, particularly in the "file tree" and
   http://www.bittorrent.org/beps/bep_0052.html
 
 
-Note that utility.convertMapToFriendlyObject() does not change BitTorrent
+Note that `utility.convertMapToFriendlyObject()` does not change BitTorrent
 property names. Array notation is necessary to handle the properties of
 zero length or those containing spaces and punctuation:
 ```
-  torrent["info"]["file tree"]["directory1"]["fileA.txt"][""]["pieces root"]
-  torrent["piece layers"]["<hex>0A 0B 0C 11 22 33</hex>"]
+  metaInfoObj["info"]["file tree"]["directory1"]["fileA.txt"][""]["pieces root"]
+  metaInfoObj["piece layers"]["<hex>0A 0B 0C 11 22 33</hex>"]
 ```
